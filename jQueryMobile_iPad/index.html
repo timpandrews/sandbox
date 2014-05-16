@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Mobile Web Apps</title>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquerymobile.js"></script>
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="css/jquerymobile.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+  <section data-role="page" id="home">
+   <article data-role="content">
+      <img src="images/viewsourcelogo.png" alt="View Source Logo">
+
+      <div data-role="controlgroup">
+        <a href="#blog" class="ui-btn ui-icon-edit ui-btn-icon-left
+            ui-corner-all ui-btn-b">Blog</a>
+        <a href="#videos" class="ui-btn ui-icon-video ui-btn-icon-left
+            ui-corner-all ui-btn-b">Videos</a>
+        <a href="#photos" class="ui-btn ui-icon-camera ui-btn-icon-left
+            ui-corner-all ui-btn-b">Photos</a>
+        <a href="#tweets" class="ui-btn ui-icon-comment ui-btn-icon-left
+            ui-corner-all ui-btn-b">Tweets</a>
+      </div>
+   </article><!-- content -->
+  </section><!-- home -->
+
+
+  <!-- page: blog -->
+  <section id="blog" class="header_default footer_default" data-role="page" data-title="Blog">
+    <div data-role="content" id="postlist"></div><!-- content -->
+  </section><!-- blog page -->
+  
+  <!-- page: blogposts -->
+  <section class="header_default footer_default" data-title="Posts" data-role="page" id="blogpost">
+    <div data-role="content">
+      <div id="mypost"></div>
+    </div><!-- content -->
+  </section><!-- blogposts page -->
+
+  <section id="videos" class="header_default footer_default" data-role="page" data-title="Videos">
+    <div data-role="content">
+      <div class="ui-grid-a" id="videoList"></div>
+    </div><!-- content -->
+  </section><!-- videos page -->
+
+  <section id="videoplayer" class="header_default footer_default" data-role="page" data-title="Player">
+    <div data-role="content">
+      <div id="myplayer"></div>
+    </div><!-- content -->
+  </section><!-- videoplayer page -->
+
+  <section id="photos" class="header_default footer_default" data-role="page" data-title="Photo grid">
+    <div data-role="content">
+      <div class="ui-grid-c" id="photolist"></div>
+    </div><!-- content -->
+  </section><!-- photos page -->
+
+  <section id="showphoto" data-role="page">
+    <div data-role="content">
+      <div id="myphoto"></div>
+    </div><!-- content -->
+  </section><!-- show photo page -->
+
+  <section id="tweets" class="header_default footer_default" data-role="page" data-title="Tweets">
+    <div data-role="content" id="tweetlist">
+    </div><!-- content -->
+  </section><!-- show tweets -->
+
+  <section id="mydialog" data-role="dialog">
+    <header data-role="header"><h1>More Info</h1></header>
+    <div data-role="content">
+      <h1>About iViewSource</h1>
+      <p>iViewSource is Ray Villalobos' blog with information on front-end and related technologies like JavaScript, PHP and WordPress. For more information, visit <a href="http://iviewsource.com">iviewsource.com</a></p>
+    </div><!-- content -->
+  </section><!-- dialog -->
+
+<script src="js/script.js"></script>
+<script src="http://iviewsource.com/category/codingtutorials/?json=1&count=10&callback=listPosts"></script>
+<script src="http://gdata.youtube.com/feeds/users/planetoftheweb/uploads?alt=json&max-results=30&callback=listVideos"></script>
+<script src="http://api.flickr.com/services/feeds/photos_public.gne?id=73845487@N00&format=json&tags=viewsource"></script>
+<script src="http://iviewsource.com/exercises/powtweets/tweets_json.php?count=30&callback=listTweets"></script>
+</body>
+</html>

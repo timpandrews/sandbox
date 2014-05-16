@@ -1,0 +1,106 @@
+#home .ui-controlgroup {
+  width: 60%;
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+#home img {
+  width: 100%;
+  max-width: 375px;
+  display: block;
+  margin: 0 auto;
+}
+
+#home, #blog, #photos, #videos, #tweets, #videoList, #videoplayer {
+  background: url('../images/background_viewsource.png')
+}
+
+li.ui-li-has-thumb img {
+  margin: 10px;
+}
+
+iframe {
+  width: 100%;
+}
+
+#videoList h3 {
+  margin: 15px 0 5px 0;
+  height: 40px;
+  overflow: hidden;
+  font-size: 1em;
+}
+
+#videoList img {
+  display: block;
+  width: 90%;
+}
+
+#videoplayer .ui-content {
+  margin: 0;
+  padding: 0;
+}
+
+#videoplayer iframe {
+  width: 100%;
+  min-height: 50%;
+}
+
+#videoplayer h3, #myplayer p {
+  padding: 0 5%;
+}
+
+#photolist.ui-grid-c {
+  max-width: 650px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+#photolist .ui-block-a,
+#photolist .ui-block-b,
+#photolist .ui-block-c,
+#photolist .ui-block-d {
+  width: 23%;
+  margin: 1%;
+}
+
+#photolist img {
+  width: 100%;
+  float: left;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#showphoto {
+  background: rgba(0,0,0,.7);
+}
+
+#showphoto .ui-content {
+  width: 100%;
+  padding: 0;
+}
+
+#showphoto img {
+  width: 100%;
+  padding: 0;
+}
+
+#tweets .ui-listview li {
+  background: #EEE;
+  color: #666;
+  font-weight: normal;
+  border-top: 1px solied #888;
+  white-space: normal;
+  padding-top: 10px;
+}
+
+#tweets .ui-list-view a {
+  color: #555;
+}
+
+#tweets img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
